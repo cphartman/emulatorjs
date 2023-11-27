@@ -33,6 +33,7 @@
         })
     }
     
+    EJS_DEBUG_XX = true;
     if (('undefined' != typeof EJS_DEBUG_XX && true === EJS_DEBUG_XX)) {
         await loadScript('emulator.js');
         await loadScript('nipplejs.js');

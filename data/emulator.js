@@ -66,7 +66,7 @@ class EmulatorJS {
             'nes': 'fceumm',
             'snes': 'snes9x',
             'atari5200': 'a5200',
-            'gb': 'gambatte',
+            'gb': 'mgba',
             'gba': 'mgba',
             'vb': 'beetle_vb',
             'n64': 'mupen64plus_next',
@@ -98,7 +98,7 @@ class EmulatorJS {
         'fbalpha2012_cps2': ['zip'],
         'fbneo': ['zip', '7z'],
         'fceumm': ['fds', 'nes', 'unif', 'unf'],
-        'gambatte': ['gb', 'gbc', 'dmg'],
+        //'gambatte': ['gb', 'gbc', 'dmg'],
         'gearcoleco': ['col', 'cv', 'bin', 'rom'],
         'genesis_plus_gx': ['m3u', 'mdx', 'md', 'smd', 'gen', 'bin', 'cue', 'iso', 'chd', 'bms', 'sms', 'gg', 'sg', '68k', 'sgd'],
         'handy': ['lnx'],
@@ -2023,12 +2023,16 @@ class EmulatorJS {
             buttons = [
                 {id: 8, label: this.localization('A')},
                 {id: 0, label: this.localization('B')},
+                {id: 9, label: this.localization('X')},
+                {id: 1, label: this.localization('Y')},
                 {id: 2, label: this.localization('SELECT')},
                 {id: 3, label: this.localization('START')},
                 {id: 4, label: this.localization('UP')},
                 {id: 5, label: this.localization('DOWN')},
                 {id: 6, label: this.localization('LEFT')},
                 {id: 7, label: this.localization('RIGHT')},
+                {id: 10, label: this.localization('L')},
+                {id: 11, label: this.localization('R')},
             ];
         } else if ('snes' === this.getControlScheme()) {
             buttons = [
